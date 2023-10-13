@@ -189,14 +189,21 @@ body {
   .hide {
     display: initial;
   }
+  .carousel__card {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 320px) {
   .header_music {
     top: 84vh;
   }
 }
-.carousel__slide {
+main {
   background-color: #a70c42;
+}
+
+.carousel__slide {
   height: 100vh;
   padding: 3rem 0;
 }
