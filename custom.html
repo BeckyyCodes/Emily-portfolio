@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musician Porfolio Website</title>
+
+    <!-- link to font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- bootstrap icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- link to bootstrap theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@700;900&family=Be+Vietnam+Pro:wght@400;500;700&family=Courgette&family=Dancing+Script&family=Fraunces:opsz,wght@9..144,600&family=Geologica:wght@600&family=Inter:wght@400;700;800&family=Josefin+Sans:ital,wght@0,
+        200;1,200;1,300&family=Kalam&family=Lobster&family=Montserrat:wght@300;400;500;600;700&family=Pacifico&family=Poppins:wght@300;400;500;700&family=Questrial&family=Qwitcher+Grypen:wght@700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- link to my stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="position-aboslute start-0 top-0 end-0">
+        <nav class="nav__bar navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <a href="#" class="logo navbar-brand text-uppercase fs-1">emily</a>
+                <!-- toggle-btn -->
+                <button class="navbar-toggler shadow-none border-0"
+                type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar header -->
+                    <div class="offcanvas-header border-bottom">
+                    <h5 class="logo offcanvas-title" id="offcanvasNavbarLabel">emily</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <!-- sidebar body -->
+                    <div class="offcanvas-body">
+                    <ul class="nav__bar navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-decoration-none" aria-current="page" href="#home">home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#services">about emily</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2" href="#footer">albums</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#footer">contact</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero_new">
+        <div class="hero_img_overlay"></div>
+        <div class="hero_news">
+            <article>
+                <h1 class="left fw-bold text-uppercase">stream my new single!</h1>
+                <hr>
+                <ul class=" d-flex justify-content-end gap-4 fs-2">
+                    <li><i class="bi bi-spotify"></i></li>
+                    <li><i class="bi bi-music-note-beamed"></i></li>
+                    <li><i class="bi bi-boombox-fill"></i></li>
+                    <li><i class="bi bi-broadcast"></i></li>
+                </ul>
+            </article>
+            <div>
+                <img src="images/hero.jpg" alt="">
+                <div class="plays">
+                    <i class="bi bi-play-circle"></i>
+                    <p>play now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

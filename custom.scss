@@ -1,0 +1,254 @@
+// variables
+$text: #21020d;
+$background: #fde2ec;
+$primary: #a70c42;
+$secondary: #f9a4c2;
+$accent: #c40e4d;
+
+// removing all default styling
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $background;
+    color: $text;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+// styling the header section
+.logo {
+    color: $text !important;
+    letter-spacing: .6rem;
+    font-weight: 700;
+}
+.logo:hover  {
+    color: $text;
+}
+
+.nav__bar a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: $background;
+    transition: ease-in-out .5s;
+}
+
+.nav__bar a:hover {
+    color: $accent;
+}
+
+.navbar_toggler {
+    background-color: $secondary;
+}
+
+// SIDEBAR
+.sidebar {
+    background: $secondary;
+}
+
+.sidebar .logo {
+    text-transform:  uppercase;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+}
+
+.sidebar_body{
+    padding: 2rem;
+}
+
+// hero section
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 50%;
+    max-width: 50vw;
+    max-height: 100%;
+    width: auto;
+    height: 100vh;
+    background-position: right;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero_img_overlay {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    height: 100vh;
+    bottom: 0%;
+    background-color: $text;
+    opacity: .5;
+    z-index: 1;
+}
+
+.hero__content {
+    z-index: 1;
+}
+
+.hero__content-width {
+    margin-right: 3rem;
+}
+
+// .hero__heading {
+
+// }
+
+.list {
+    list-style-type: none;
+}
+
+.list a {
+    text-decoration: none;
+    color: $secondary !important;
+    transition: ease-in .4s;
+}
+
+.list a:hover {
+    color: $accent !important;
+}
+
+.header_music {
+    position: absolute;
+    top: 87vh;
+    right: 23.2rem;
+    width: 60%;
+}
+
+.header_music_play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary;
+    font-weight: 400;
+    padding: .5rem;
+    width: 40%;
+}
+
+.text span {
+    margin-top: .4rem ;
+}
+
+.listen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+    padding: .3rem;
+}
+
+.play {
+    background-color: $text;
+    color: $secondary;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1.5rem;
+    width: 23%;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.progress__bar{
+    background-color: #a70c42;
+}
+
+@media (max-width: 1280px) {
+    .header_music {
+        right: 13.6rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .header_music {
+        right: 11rem;
+        top: 84vh;
+        width: 80%;
+    }
+}
+
+@media (max-width:950px) {
+    .hero img {
+        max-width: 100vw;
+        left: 0;
+        right: 0;
+    }
+
+    .header_music {
+        right: 0;
+        top: 86.2vh;
+        width: 100vw;
+    }
+    .text {
+        width: 80%;
+    }
+    .play {
+        display: none;
+    }
+    
+    .hide {
+        display: initial;
+    }
+}
+
+@media (max-width: 320px) {
+    .header_music {
+        top: 84vh;
+    }
+}
+
+
+.carousel__slide {
+    background-color: $primary;
+    height: 100vh;
+    padding: 3rem 0;
+}
+
+
+.carousel__image {
+    height: 80vh;
+}
+
+.album1 {
+    min-height: 100vh;
+}
+
+.song {
+    color: $background;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.song h1 {
+    text-transform: uppercase;
+}
+
+.song button {
+    padding: 1rem;
+    color: $background;
+    border-color: $background;
+    background-color: $primary;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 1rem 0;
+}
