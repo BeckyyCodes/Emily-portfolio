@@ -16,6 +16,7 @@ body {
     color: $text;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 // styling the header section
@@ -40,8 +41,16 @@ body {
 }
 
 .navbar_toggler {
-    background-color: $secondary;
+    background-color: $primary;
 }
+
+/* nav class on scroll using javascript */
+.window-scrolled {
+    background: $primary;
+    border-bottom: .2rem solid var(--color-bg-3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+}
+
 
 // SIDEBAR
 .sidebar {
@@ -103,7 +112,7 @@ body {
     list-style-type: none;
 }
 
-.list a {
+.list  a {
     text-decoration: none;
     color: $secondary !important;
     transition: ease-in .4s;
@@ -219,21 +228,27 @@ body {
     }
 }
 
-
-// main section start
-main {
-    background-color: $primary;
-}
-
-
 // album section
 .carousel__slide {
-    height: 100vh;
+    min-height: 100vh;
     padding: 3rem 0;
+    background-color: $primary;
+    max-width: 100vw;
+}
+
+.carousel__slide h1 {
+    text-transform: uppercase;
+    color: $secondary;
+    padding: .5rem 3rem;
+
 }
 
 .carousel__image {
     height: 80vh;
+}
+
+.carousel__text {
+    padding: 3rem 1rem;
 }
 
 .album1 {
@@ -250,6 +265,8 @@ main {
 
 .song h1 {
     text-transform: uppercase;
+    text-align: left;
+    padding: 0;
 }
 
 .song button {
@@ -261,3 +278,106 @@ main {
     width: 50%;
     margin: 1rem 0;
 }
+
+// BIO SECTION
+.bio__section {
+    background: $background;
+    padding: 3rem;
+}
+
+.bio__text {
+    color: $text;
+    padding: 2rem 0;
+}
+
+.bio__text h1 {
+    font-weight: 800;
+    letter-spacing: .15;
+}
+.bio p {
+    letter-spacing: .22rem;
+    line-height: 1.8;
+    padding: 1.2rem 0;
+    font-weight: 500;
+}
+
+
+// FOOTER SECTION
+footer {
+    background-color: $text;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    color: $secondary;
+    font-size: 2rem;
+}
+
+.footer__icons a {
+    color: $secondary;
+}
+
+.footer__icons a i:hover {
+    color: $accent;
+}
+
+footer p {
+    color: $secondary;
+    padding: 1rem;
+}
+
+// responsiveness for tablets
+@media (max-width: 850px) {
+    .carousel__inner {
+        padding: 2rem;
+    }
+
+    .bio .image {
+        width: 100vw;
+    }
+
+    .bio img {
+        max-width: 100vw;
+    }
+}
+
+
+// responsiveness for smaller screens
+@media (max-width:550px) {
+    .carousel__inner {
+        padding: 2rem;
+    }
+
+    .song button {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bio {
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio .image {
+        max-width: 80vw;
+    }
+
+    .bio img {
+        max-width: 80vw;
+    }
+
+    .bio p {
+        text-align: justify;
+    }
+
+    .footer__icons {
+        flex-direction: column;
+    }
+}
+
+  
