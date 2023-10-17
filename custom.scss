@@ -37,7 +37,7 @@ body {
 }
 
 .nav__bar a:hover {
-    color: $accent;
+    color: $text;
 }
 
 .navbar_toggler {
@@ -277,6 +277,12 @@ body {
     text-transform: uppercase;
     width: 50%;
     margin: 1rem 0;
+    transition: .5s ease-in-out;
+}
+
+.song button:hover {
+    background-color: $background;
+    color: $primary;
 }
 
 // BIO SECTION
@@ -357,6 +363,9 @@ footer p {
         margin: 0;
     }
 
+    .album1 {
+        max-height: 70vh;
+    }
     .bio {
         padding: 3rem 0;
         display: flex;
