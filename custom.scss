@@ -82,13 +82,13 @@ body {
 
 .nav__bar a {
     font-size: 1.3rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: $background;
     transition: ease-in-out .5s;
 }
 
 .nav__bar a:hover {
-    color: $accent;
+    color: $text;
 }
 
 .navbar_toggler {
@@ -284,7 +284,7 @@ body {
     min-height: 100vh;
     padding: 3rem 0;
     background-color: $primary;
-    max-width: 100vw;
+    min-width: 100vw;
 }
 
 .carousel__slide h1 {
@@ -328,6 +328,12 @@ body {
     text-transform: uppercase;
     width: 50%;
     margin: 1rem 0;
+    transition: .5s ease-in-out;
+}
+
+.song button:hover {
+    background-color: $background;
+    color: $primary;
 }
 
 // BIO SECTION
@@ -356,6 +362,7 @@ body {
 // FOOTER SECTION
 footer {
     background-color: $text;
+    min-width: 100vw;
 }
 
 .footer__icons {
@@ -406,6 +413,10 @@ footer p {
     .song button {
         width: 100%;
         margin: 0;
+    }
+
+    .album1 {
+        max-height: 50vh;
     }
 
     .bio {
