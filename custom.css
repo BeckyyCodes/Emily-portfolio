@@ -42,6 +42,10 @@
   padding: 60px 0;
 }
 
+button {
+  background-color: #21020d;
+}
+
 /* Footer Section Styling */
 .footer {
   background-color: #fde2ec;

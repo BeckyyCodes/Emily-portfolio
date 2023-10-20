@@ -57,6 +57,15 @@ body {
   padding: 2rem;
 }
 
+/* styling the navbr for other pages */
+.nav__bar-others  {
+  background-color: #a70c42;
+}
+
+.top-others {
+  margin-top: 6rem;
+}
+
 .hero {
   position: relative;
   height: 100vh;
