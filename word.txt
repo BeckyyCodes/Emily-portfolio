@@ -1,0 +1,34 @@
+
+Design Choices:
+1. User Interface: The design choice for the user interface focused on simplicity and ease of use. 
+We opted for a clean and intuitive layout, with clear navigation and minimal distractions. 
+This was achieved by using a minimalist color scheme, consistent typography, and logical placement of elements.
+
+2. Responsive Design: To ensure optimal user experience across different devices and screen sizes, 
+we implemented a responsive design approach. This involved using media queries and flexible layouts 
+to adapt the interface dynamically based on the user's device.
+
+3. Visual Hierarchy: A key design choice was used to establish a clear visual hierarchy to guide 
+users' attention and prioritize important information. We achieved this by using appropriate font sizes, 
+colors, and visual cues such as bolding, underlining, and spacing.
+
+Coding Techniques:
+1. Modularization: To enhance code organization and maintainability, we adopted a modular approach. We 
+divided our code into smaller, self-contained modules, each responsible for a specific feature or functionality. 
+This facilitated easier debugging, testing, and collaboration among team members.
+
+2. Code Documentation: We prioritized code documentation by adding comments and clear explanations throughout the codebase. 
+This helped team members understand the purpose and functionality of different sections of code, making it easier to 
+collaborate and maintain the project.
+
+GitHub Collaboration:
+1. Version Control: We utilized Git and GitHub for version control, allowing us to track changes, collaborate efficiently, 
+and revert to previous versions if needed. This helped prevent conflicts and ensured a seamless collaboration process.
+
+2. Branching Strategy: We followed a branching strategy, creating separate branches for different features or bug fixes. 
+This allowed team members to work on their assigned tasks independently without interfering with each other's work. 
+Regularly merging branches into the main branch ensured a cohesive and up-to-date codebase.
+
+3. Pull Requests and Code Reviews: We used pull requests to propose and review changes before merging them into the main branch.
+ This allowed team members to provide feedback, suggest improvements, and ensure code quality and consistency. 
+ Code reviews helped identify and address potential issues early on, enhancing the overall quality of the project.
