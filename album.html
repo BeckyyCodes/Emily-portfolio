@@ -3,150 +3,224 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link to my stylesheet -->
-    <link rel="stylesheet" href="album.css">
-    <link rel="stylesheet" href="styles.css">
+  <!-- link to my stylesheet -->
+  <link rel="stylesheet" href="album.css">
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- link to font awesome icons -->
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <!-- link to font awesome icons -->
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  />
 
-    <!-- bootstrap icons link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- bootstrap icons link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- link to bootstrap theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
-
-
-    <title>Music Player</title>
+  <!-- link to bootstrap theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+  <title>Music Player</title>
 </head>
+
 <body>
+  <!-- Header Start -->
+  <header class="position-aboslute start-0 top-0 end-0">
+    <nav class="nav__bar nav__bar-others navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- logo -->
+            <a href="#" class="logo navbar-brand text-uppercase fs-1">emily</a>
+            <!-- toggle-btn -->
+            <button class=" navbar_toggler navbar-toggler shadow-none border-0"
+            type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar_toggler"></span>
+            </button>
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header -->
+                <div class="offcanvas-header border-bottom">
+                <h5 class="logo offcanvas-title" id="offcanvasNavbarLabel">emily</h5>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
 
-    <!-- Header Start -->
-    <header class="position-aboslute start-0 top-0 end-0">
-        <nav class="nav__bar navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                <!-- logo -->
-                <a href="#" class="logo navbar-brand text-uppercase fs-1">emily</a>
-                <!-- toggle-btn -->
-                <button class=" navbar_toggler navbar-toggler shadow-none border-0"
-                type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon navbar_toggler"></span>
-                </button>
-                <!-- sidebar -->
-                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <!-- sidebar header -->
-                    <div class="offcanvas-header border-bottom">
-                    <h5 class="logo offcanvas-title" id="offcanvasNavbarLabel">emily</h5>
-                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-
-                    <!-- sidebar body -->
-                    <div class="offcanvas-body sidebar_body">
-                    <ul class="nav__bar navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link text-decoration-none" aria-current="page" href="index.html">home</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="about.html">about emily</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link mx-2" href="album.html">albums</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="contact.html">contact</a>
-                        </li>
-                    </div>
+                <!-- sidebar body -->
+                <div class="offcanvas-body sidebar_body">
+                <ul class="nav__bar navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-decoration-none" aria-current="page" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">about emily</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mx-2" href="album.html">albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="contact.html">contact</a>
+                    </li>
                 </div>
             </div>
-        </nav>
-    </header>  
-<h1>Emily: The Debut Album</h1>
-<div class="music-container" id="music-container">
-<div class="music-info">
-<h4 class="title" id="title"></h4>
-<div class="progress-container" id="progress-container">
-<div class="progress" id="progress"></div>
-</div>
-</div>
-
-<audio src="./music/happyrock.mp3" id="audio"></audio>
-<div class="img-container">
-<img src="./emily.jpg" alt="music-cover" id="cover" />
-</div>
-<div class="navigation">
-<button id="prev" class="action-btn">
-<i class="fa fa-backward" aria-hidden="true"></i>
-</button>
-<button id="play" class="action-btn action-btn-big">
-<i class="fa fa-play" aria-hidden="true"></i>
-</button>
-<button id="next" class="action-btn">
-<i class="fa fa-forward" aria-hidden="true"></i>
-</button>
-<div class="about-section">
-    <div class="about-section-display-left">
-<h1> My Time </h1>
-<p class="text">
-
-"My Time" is my personal six-track journey, beginning with the heartfelt and soul-baring opener, "New Beginnings." This musical voyage chronicles my ups and downs on the path to stardom, sharing the stories of my struggles and triumphs as an independent artist.
-In the second track, "Reborn" I delve into the depths of self-awareness, laying bare my experiences in navigating the intricate tapestry of life.
- The sound of this album reflects the DIY spirit, with a raw, authentic texture that complements my unique, unpolished vocals, creating a fusion of lyrics and melody that's authentically me.
- "Nobody," the third track, underscores my unwavering commitment to staying true to my artistic vision as an independent musician. The album reaches its peak with the sixth and final track, "Complicated," a heartfelt reflection on the goodness, grace, and moments of serendipity that have shaped my journey.
-This work of art culminates in a sincere expression of gratitude, a testament to the independent artist's unwavering dedication to my craft
-
-</p>
-    <div class="social">
-    <a>
-        <img src="./download (2).png"/> 
-    </a>
-    <a>
-        <img src="./download (1).png"/> 
-    </a>
-    <a>
-        <img src="./download.png"/> 
-    </a>
-</div>
-    </div>
-        
-    
-</div>
-</div>
-</div>
-
- <!-- FOOTER SECTION -->
- <footer class="container-fluid">
-    <div class="container">
-        <div class="footer__icons">
-            <a class="text-decoration-none" href="#">
-            <i class="bi bi-spotify"></i> SPOTIFY
-            </a>
-            <a class="text-decoration-none" href="#">
-            <i class="fab fa-twitter"></i> TWITTER
-            </a>
-            <a class="text-decoration-none" href="#">
-            <i class="fab fa-instagram"></i> INSTAGRAM
-            </a>
-            <a class="text-decoration-none" href="#">
-            <i class="fab fa-youtube"></i> YOUTUBE
-            </a>
         </div>
-        <p class="text-center">&copy 2022 EMILY, All Rights Reserved</p>
+    </nav>
+</header>
+
+
+<div class="container text-center top__others ">
+  <div class="row align-items-start">
+    <div class="col col-lg-6 position-relative left">
+      <div class="position__left">
+        <img class="album-image" src="Images/emily.jpg" alt=""
+        style="width: 500px;">
+        <div class="image-text">
+          <h3>story story</h3>
+          <p>again</p>
+        </div>
+      </div>
+      </div>
+      <div class="col col-lg-6 right">
+        <h1 class="text-uppercase album-title">Moment By Moment [MBM]</h1>
+        <h1 class="text-uppercase album-title">tracklist</h1>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">1. STORY STORY</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">2. chase</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">3. confession</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">4. naringa</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">5. buga</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">6. feel</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">7. me & u</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+              <i class="bi bi-arrow-right-short"></i>
+            </div>
+            <span>
+              <i class="music-play bi bi-play"></i>
+            </span>
+          </div>
+        </div>
+        <div class="tracklist d-flex justify-content-between">
+          <div class="buy-song">
+            <h3 class="name">1. STORY STORY</h3>
+          </div>
+          <div class="track">
+            <div class="d-flex buy-song">
+              <h3>buy track</h3>
+            <a class="arrow" href=""><i class="arrow bi bi-arrow-right-short"></i></a>
+        </div>
+        <span>
+          <i class="music-play bi bi-play"></i>
+        </span>
+      </div>
     </div>
+  </div>
+</div>
+
+  <!-- FOOTER SECTION -->
+<footer class="container-fluid footer__width">
+  <div class="container">
+    <div class="footer__icons">
+      <a class="text-decoration-none" href="#">
+        <i class="bi bi-spotify"></i> SPOTIFY
+      </a>
+      <a class="text-decoration-none" href="#">
+        <i class="fab fa-twitter"></i> TWITTER
+      </a>
+      <a class="text-decoration-none" href="#">
+        <i class="fab fa-instagram"></i> INSTAGRAM
+      </a>
+      <a class="text-decoration-none" href="#">
+        <i class="fab fa-youtube"></i> YOUTUBE
+      </a>
+      </div>
+      <p class="text-center">&copy 2022 EMILY, All Rights Reserved</p>
+  </div>
 </footer>
 
-<script src="script.js"></script>
-<script src="app.js"></script> 
 </body>
 </html>
