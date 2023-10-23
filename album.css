@@ -113,3 +113,7 @@ body {
 .arrow:hover {
     transition: .5s ease-in-out;
 }
+
+.footer__width {
+    margin-left: -22rem;
+}
